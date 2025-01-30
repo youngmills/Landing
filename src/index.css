@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --font-sora: "Sora", sans-serif;
+    --font-code: "Source Code Pro", monospace;
+    --font-grotesk: "Space Grotesk", sans-serif;
+    color-scheme: dark;
+}
+
+* {
+    scroll-behavior: smooth
+}
+
+@layer base {
+    body {
+        @apply font-sans bg-n-8 text-n-1 text-base;
+    }
+}
+
+
+.container {
+    margin: 0 15px; display: flex; justify-content: center; align-items: center; min-height: 100vh; background: linear-gradient(to right, #1e1e1e, #2c2c2c); color: #fff;
+}
+
+.form-box{
+     width: 100%; max-width: 450px; padding: 30px; border-radius: 10px; box-shadow: 0 0 10px; display: none;
+}
+
+.form-box.active {
+    display: block;
+}
+
+h1 {
+    font-family: font-sora 34px; text-align: center; margin-bottom: 20px;
+}
+
+input {
+     width: 94%; padding: 12px; margin-bottom: 20px; border: none; border-radius: 6px; background: #333; color: #fff; outline: none;
+}
+
+button {
+    width: 100%; padding: 12px; margin-bottom: 20px; border: none; border-radius: 6px; background: #3c9af1; color: #f0f3f5; outline: none;
+}
+
+button:hover {
+    background: #f02de0;
+}
+
+p {
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+p a {
+    color: #fff;
+}
+
+p a:hover {
+    color: #f00;
+}
